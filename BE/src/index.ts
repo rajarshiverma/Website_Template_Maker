@@ -4,8 +4,8 @@ dotenv.config();
 import express from "express";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { BASE_PROMPT, getSystemPrompt } from './prompt';
-import { basePrompt as nodeBasePrompt } from "./defaults/node";
-import { basePrompt as reactBasePrompt } from "./defaults/react";
+import { nodeBasePrompt } from "./defaults/node";
+import { reactBasePrompt } from "./defaults/react";
 import cors from "cors";
 
 const GM_API_KEY = process.env.GEMINI_API_KEY;
